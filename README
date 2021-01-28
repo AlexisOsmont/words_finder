@@ -1,0 +1,24 @@
+
+Pour utiliser notre programme vous devez entrer ./lidx suivi de :
+	- au moins un lexique 
+	- < fichier.txt ou fichier.txt est le lexique final dans lequel la 
+		recherche de mot et la sauvgarde de sa ligne ce fera, un lexique 
+		peut etre composé d’un mot, d’une suite de mot encadré par des 
+		guillemets ou un fichier.txt precedé par un ‘-’ suivit d’un espace.
+
+Vous pouvez aussi y ajouter des options avant "< fichier.txt" comme: 
+	* -S ou --sort -> permet de trier l’affichage dans l’ordre lexicographique
+	* -u ou --case=upper -> lit les caractères en majuscule, 
+	* -l ou --case=lower -> lit les caractères en minuscule
+	* -s ou --case=is-as -> laisse tels quels 
+	* -o fichier.txt ou --ouput=fichier.txt -> affiche le resultat du programme sur le fichier entré (fichier.txt).
+
+Exemple de ligne de commande : 	
+		→ ./lidx bonjour “salut, ca va ?” - abcd.txt < fichier.txt
+
+Exemples de ligne de commande avec les options.
+	 	→ ./lidx bonjour - abcd.txt -u < fichier.txt
+		→ ./lidx bonjour - abcd.txt --case=lower < fichier.txt
+		→ ./lidx bonjour - abcd.txt -o output.txt < fichier.txt
+
+Si vous avez besoin d'aide taper --help ou -h sur la ligne de commande.
